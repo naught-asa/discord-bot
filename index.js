@@ -42,5 +42,8 @@ client.on("interactionCreate", async interaction => {
 	}
 });
 
-// 🔥 変更ポイントここ
+// デバッグ用
+console.log("TOKEN =", process.env.TOKEN);
+
+// ログイン
 client.login(process.env.TOKEN);
