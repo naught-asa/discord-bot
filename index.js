@@ -43,6 +43,7 @@ client.on("interactionCreate", async interaction => {
 });
 
 // デバッグ用
+console.log("GITHUB EDIT CHECK");
 console.log("TOKEN =", process.env.TOKEN);
 
 // ログイン
