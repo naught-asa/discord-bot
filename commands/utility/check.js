@@ -25,10 +25,10 @@ module.exports = {
 		expire.setDate(now.getDate() + limitDays);
 
 		return interaction.reply(
-			`📅Day : ${now.toLocaleString('ja-JP')+9}\n` +
-			`📅Limit : ${limitDays}日\n` +
-			`🗺Map : ${code}\n` +
-			`⏳Auto : ${expire.toLocaleString('ja-JP')+9}`
+		  `📅Day : ${now.toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}\n` +
+		  `📅Limit : ${limitDays}日\n` +
+		  `🗺Map : ${code}\n` +
+		  `⏳Auto : ${expire.toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}`
 		);
 	},
 };
